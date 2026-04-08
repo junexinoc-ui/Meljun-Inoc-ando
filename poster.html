@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Poster</title>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text:align:center;
+            background:linear-gradient(45deg,lightblue, peachpuff,grey)
+        }
+        .poster{
+            color:white;
+            text-align:center;
+            width:60%;
+            border:1px solid rgba(225,225,225,0.5);
+            border-radius:25px;
+            backdrop-filter:blur(15px);
+            webkit-backdrop-filter:blur(15px); 
+            background: transparent rgba(225, 225,225,0.1);
+            box-shadow:0 10px 32px rgba(0,0,0,0.3);
+        }
+        .typing-text::after{
+            content:"-If you do it right";
+            animation:typing 3s infinite;
+            color:grey;
+            font-size:20px;
+        }
+        @keyframes typing{
+            50%{content:"-once is enough"};
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div class="poster">
+            <h1>You only live once</h1>
+            <span class="typing-text"></span>
+            <p>-Inoc meljun</p>
+        </div>
+    </body>
+    </html>
